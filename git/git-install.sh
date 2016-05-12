@@ -25,3 +25,28 @@ echo "export PATH=$PATH:/opt/git/bin" >> /etc/bashrc
 
 source /etc/bashrc
 
+# check git version
+
+git version
+
+# If you have multiple git remote repositories, you don't need to config the following
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+# push and pull via ssh using ssh key
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+# for git, the name of the rsa file must one of the four
+
+# id_dsa.pub
+# id_ecdsa.pub
+# id_ed25519.pub
+# id_rsa.pub
+
+# ssh pub key file location is: 
+# /Users/you/.ssh/id_rsa.pub
+
+# if you create as a root, it will be:
+
+# /root/.ssh/id_rsa.pub
