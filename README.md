@@ -1,2 +1,2 @@
 # learning-record
-Write what I have leart
+Record what I have learnt
